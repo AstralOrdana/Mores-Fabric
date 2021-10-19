@@ -12,10 +12,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block GRANITE_COAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block ANDESITE_COAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block DIORITE_COAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block TUFF_COAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+    public static final CoalOre GRANITE_COAL_ORE = new CoalOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final CoalOre ANDESITE_COAL_ORE = new CoalOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final CoalOre DIORITE_COAL_ORE = new CoalOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final CoalOre TUFF_COAL_ORE = new CoalOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 0).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
     public static final Block GRANITE_IRON_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
     public static final Block ANDESITE_IRON_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
@@ -37,20 +37,20 @@ public class ModBlocks {
     public static final RedstoneOreBlock DIORITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
     public static final RedstoneOreBlock TUFF_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
-    public static final Block GRANITE_LAPIS_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block ANDESITE_LAPIS_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block DIORITE_LAPIS_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block TUFF_LAPIS_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+    public static final LapisOre GRANITE_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final LapisOre ANDESITE_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final LapisOre DIORITE_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final LapisOre TUFF_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
-    public static final Block GRANITE_DIAMOND_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block ANDESITE_DIAMOND_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block DIORITE_DIAMOND_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block TUFF_DIAMOND_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+    public static final DiamondOre GRANITE_DIAMOND_ORE = new DiamondOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final DiamondOre ANDESITE_DIAMOND_ORE = new DiamondOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final DiamondOre DIORITE_DIAMOND_ORE = new DiamondOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final DiamondOre TUFF_DIAMOND_ORE = new DiamondOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
-    public static final Block GRANITE_EMERALD_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block ANDESITE_EMERALD_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block DIORITE_EMERALD_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final Block TUFF_EMERALD_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+    public static final EmeraldOre GRANITE_EMERALD_ORE = new EmeraldOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final EmeraldOre ANDESITE_EMERALD_ORE = new EmeraldOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final EmeraldOre DIORITE_EMERALD_ORE = new EmeraldOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final EmeraldOre TUFF_EMERALD_ORE = new EmeraldOre(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Mores.MOD_ID, "granite_coal_ore"), GRANITE_COAL_ORE);
