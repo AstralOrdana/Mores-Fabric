@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:copper_ores"
   },
-  "result": {},
+  "result": "minecraft:copper_ingot",
   "experience": 0.7,
   "cookingtime": 200
 }

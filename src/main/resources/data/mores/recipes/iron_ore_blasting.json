@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:iron_ores"
   },
-  "result": {},
+  "result": "minecraft:iron_ingot",
   "experience": 0.7,
   "cookingtime": 100
 }

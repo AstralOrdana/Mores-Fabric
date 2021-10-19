@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:coal_ores"
   },
-  "result": {},
+  "result": "minecraft:coal",
   "experience": 0.1,
   "cookingtime": 200
 }

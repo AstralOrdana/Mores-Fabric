@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:diamond_ores"
   },
-  "result": {},
+  "result": "minecraft:diamond",
   "experience": 1.0,
   "cookingtime": 200
 }

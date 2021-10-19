@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:gold_ores"
   },
-  "result": {},
+  "result": "minecraft:gold_ingot",
   "experience": 1.0,
   "cookingtime": 100
 }

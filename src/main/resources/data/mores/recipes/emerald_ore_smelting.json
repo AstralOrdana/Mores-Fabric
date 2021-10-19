@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "mores:emerald_ores"
   },
-  "result": {},
+  "result": "minecraft:emerald",
   "experience": 1.0,
   "cookingtime": 200
 }
