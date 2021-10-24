@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 16
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "height": {
+                  "type": "minecraft:trapezoid",
+                  "min_inclusive": {
+                    "absolute": -16
+                  },
+                  "max_inclusive": {
+                    "absolute": 112
+                  }
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 20,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:granite"
+                    },
+                    "state": {
+                      "Name": "mores:granite_copper_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:andesite"
+                    },
+                    "state": {
+                      "Name": "mores:andesite_copper_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:diorite"
+                    },
+                    "state": {
+                      "Name": "mores:diorite_copper_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:tuff"
+                    },
+                    "state": {
+                      "Name": "mores:tuff_copper_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:stone"
+                    },
+                    "state": {
+                      "Name": "minecraft:copper_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:deepslate"
+                    },
+                    "state": {
+                      "Name": "minecraft:deepslate_copper_ore"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 2
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "height": {
+                  "type": "minecraft:trapezoid",
+                  "min_inclusive": {
+                    "absolute": -32
+                  },
+                  "max_inclusive": {
+                    "absolute": 32
+                  }
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 7,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:granite"
+                    },
+                    "state": {
+                      "Name": "mores:granite_lapis_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:andesite"
+                    },
+                    "state": {
+                      "Name": "mores:andesite_lapis_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:diorite"
+                    },
+                    "state": {
+                      "Name": "mores:diorite_lapis_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:tuff"
+                    },
+                    "state": {
+                      "Name": "mores:tuff_lapis_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:stone"
+                    },
+                    "state": {
+                      "Name": "minecraft:lapis_ore"
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:deepslate"
+                    },
+                    "state": {
+                      "Name": "minecraft:deepslate_lapis_ore"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
