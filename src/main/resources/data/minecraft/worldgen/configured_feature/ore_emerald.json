@@ -1,106 +1,63 @@
 {
-  "type": "minecraft:decorated",
   "config": {
-    "decorator": {
-      "type": "minecraft:count",
-      "config": {
-        "count": {
-          "type": "minecraft:uniform",
-          "value": {
-            "min_inclusive": 3,
-            "max_inclusive": 8
-          }
-        }
-      }
-    },
-    "feature": {
-      "type": "minecraft:decorated",
-      "config": {
-        "decorator": {
-          "type": "minecraft:square",
-          "config": {}
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:granite"
         },
-        "feature": {
-          "type": "minecraft:decorated",
-          "config": {
-            "decorator": {
-              "type": "minecraft:range",
-              "config": {
-                "height": {
-                  "type": "minecraft:uniform",
-                  "min_inclusive": {
-                    "absolute": 4
-                  },
-                  "max_inclusive": {
-                    "absolute": 31
-                  }
-                }
-              }
-            },
-            "feature": {
-              "type": "minecraft:replace_single_block",
-              "config": {
-                "targets": [
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:granite"
-                    },
-                    "state": {
-                      "Name": "mores:granite_emerald_ore"
-                    }
-                  },
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:andesite"
-                    },
-                    "state": {
-                      "Name": "mores:andesite_emerald_ore"
-                    }
-                  },
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:diorite"
-                    },
-                    "state": {
-                      "Name": "mores:diorite_emerald_ore"
-                    }
-                  },
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:tuff"
-                    },
-                    "state": {
-                      "Name": "mores:tuff_emerald_ore"
-                    }
-                  },
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:stone"
-                    },
-                    "state": {
-                      "Name": "minecraft:emerald_ore"
-                    }
-                  },
-                  {
-                    "target": {
-                      "predicate_type": "minecraft:block_match",
-                      "block": "minecraft:deepslate"
-                    },
-                    "state": {
-                      "Name": "minecraft:deepslate_emerald_ore"
-                    }
-                  }
-                ]
-              }
-            }
-          }
+        "state": {
+          "Name": "mores:granite_emerald_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:andesite"
+        },
+        "state": {
+          "Name": "mores:andesite_emerald_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:diorite"
+        },
+        "state": {
+          "Name": "mores:diorite_emerald_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:tuff"
+        },
+        "state": {
+          "Name": "mores:tuff_emerald_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:stone"
+        },
+        "state": {
+          "Name": "minecraft:emerald_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:deepslate"
+        },
+        "state": {
+          "Name": "minecraft:deepslate_emerald_ore"
         }
       }
-    }
-  }
+    ],
+    "size": 3,
+    "discard_chance_on_air_exposure": 0.0
+  },
+  "type": "minecraft:ore"
 }
