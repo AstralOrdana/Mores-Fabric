@@ -2,7 +2,7 @@
   "variants": {
     "": [
       {
-        "model": "mores:block/tuff_coal_ore"
+        "model": "mores:block/andesite_redstone_ore"
       }
     ]
   }
