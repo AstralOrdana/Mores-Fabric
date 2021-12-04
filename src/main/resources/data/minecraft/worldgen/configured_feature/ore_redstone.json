@@ -7,7 +7,7 @@
           "block": "minecraft:granite"
         },
         "state": {
-          "Name": "mores:granite_lapis_ore"
+          "Name": "mores:granite_redstone_ore"
         }
       },
       {
@@ -16,7 +16,7 @@
           "block": "minecraft:andesite"
         },
         "state": {
-          "Name": "mores:andesite_lapis_ore"
+          "Name": "mores:andesite_redstone_ore"
         }
       },
       {
@@ -25,7 +25,7 @@
           "block": "minecraft:diorite"
         },
         "state": {
-          "Name": "mores:diorite_lapis_ore"
+          "Name": "mores:diorite_redstone_ore"
         }
       },
       {
@@ -34,7 +34,7 @@
           "block": "minecraft:tuff"
         },
         "state": {
-          "Name": "mores:tuff_lapis_ore"
+          "Name": "mores:tuff_redstone_ore"
         }
       },
       {
@@ -43,7 +43,7 @@
           "block": "minecraft:stone"
         },
         "state": {
-          "Name": "minecraft:lapis_ore"
+          "Name": "minecraft:redstone_ore"
         }
       },
       {
@@ -52,7 +52,7 @@
           "block": "minecraft:deepslate"
         },
         "state": {
-          "Name": "minecraft:deepslate_lapis_ore"
+          "Name": "minecraft:deepslate_redstone_ore"
         }
       }
     ],
