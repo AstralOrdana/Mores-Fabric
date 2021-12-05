@@ -2,12 +2,13 @@ package com.ordana.mores.registry.blocks;
 
 import com.ordana.mores.Mores;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.RedstoneOreBlock;
+import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
@@ -31,10 +32,14 @@ public class ModBlocks {
     public static final Block DIORITE_COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
     public static final Block TUFF_COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
 
-    public static final RedstoneOreBlock GRANITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final RedstoneOreBlock ANDESITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final RedstoneOreBlock DIORITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
-    public static final RedstoneOreBlock TUFF_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+    public static final RedstoneOreBlock GRANITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().ticksRandomly().luminance(ModBlocks.createLightLevelFromLitBlockState(9)).strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final RedstoneOreBlock ANDESITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().ticksRandomly().luminance(ModBlocks.createLightLevelFromLitBlockState(9)).strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final RedstoneOreBlock DIORITE_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().ticksRandomly().luminance(ModBlocks.createLightLevelFromLitBlockState(9)).strength(3f, 3f).sounds(BlockSoundGroup.STONE));
+    public static final RedstoneOreBlock TUFF_REDSTONE_ORE = new RedstoneOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().ticksRandomly().luminance(ModBlocks.createLightLevelFromLitBlockState(9)).strength(3f, 3f).sounds(BlockSoundGroup.TUFF));
+
+    private static ToIntFunction<BlockState> createLightLevelFromLitBlockState(int litLevel) {
+        return state -> state.get(Properties.LIT) != false ? litLevel : 0;
+    }
 
     public static final LapisOre GRANITE_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));
     public static final LapisOre ANDESITE_LAPIS_ORE = new LapisOre(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3f, 3f).sounds(BlockSoundGroup.STONE));

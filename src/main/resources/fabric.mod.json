@@ -14,7 +14,7 @@
     "sources": "https://github.com/AstralOrdana/Mores"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/mores/pack.png",
 
   "environment": "*",
