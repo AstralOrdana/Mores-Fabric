@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "com.ordana.mores.Mores"
+    ],
+    "client": [
+      "com.ordana.mores.MoresClient"
     ]
   },
   "mixins": [
