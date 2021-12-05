@@ -1,7 +1,7 @@
 {
   "parent": "block/block",
-  "particle": "mores:block/gold_overlay",
   "textures": {
+    "particle": "mores:block/gold_overlay",
     "all": "block/diorite",
     "overlay": "mores:block/gold_overlay"
   },

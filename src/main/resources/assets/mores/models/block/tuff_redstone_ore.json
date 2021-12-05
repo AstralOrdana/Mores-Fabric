@@ -1,7 +1,7 @@
 {
   "parent": "block/block",
-  "particle": "mores:block/redstone_overlay",
   "textures": {
+    "particle": "mores:block/redstone_overlay",
     "all": "block/tuff",
     "overlay": "mores:block/redstone_overlay"
   },

@@ -1,7 +1,7 @@
 {
   "parent": "block/block",
-  "particle": "mores:block/copper_overlay",
   "textures": {
+    "particle": "mores:block/copper_overlay",
     "all": "block/andesite",
     "overlay": "mores:block/copper_overlay"
   },
